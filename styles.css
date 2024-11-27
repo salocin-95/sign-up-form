@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+}
+
+
+.image-container span {
+    position: absolute;
+    background-color: black;
+    }
+
+img {  
+    height: 100vh;
+}
