@@ -7,11 +7,10 @@
     display: flex;
 }
 
-
 .image-container span {
     position: absolute;
     background-color: black;
-    }
+}
 
 img {  
     height: 100vh;
