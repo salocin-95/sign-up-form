@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="image-container">
-            <span>
-                LOGO
-            </span>
-            <img class="main-image" src="images/oscar-keys-10sTDZAj5sA-unsplash.jpg">
+    <main class="main">
+        <div class="left">
+            <div class="hero"><img src="logo" alt="logo" class="logo"></div>
+            <div class="copyright">copyright Text</div>
         </div>
-        <div class="form-container">
-            <form>
-                <h1>im a form</h1>
-            </form>
+        <div class="right">
+            <div class="container">
+                <div class="top-section">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                    <p class="subtext">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="form">
+                    <h3 class="form-title">
+                        Lets do this!
+                    </h3>
+                    <form action="">
+                        <div class="fomr-text">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="">
+                        </div>
+                        <div class="form-data">
+                            <label for="email" class="email">email</label>
+                            <input type="email" name="email" id="">
+                            <label for="phone" class="phone-number">Phone number</label>
+                            <input type="number" name="phone-number" id="">
+                        </div>
+                        <div class="form-password">
+                            <label for="password" class="password">Password</label>
+                            <input type="password" name="password" id="">
+                            <label for="confirm-password">Confirm password</label>
+                            <input type="password" name="" id="">
+                        </div>
+                    </form>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Create  Acount"><br>
+                    <span class="submit">Already have an account?<a href="">Log in</a></span>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
