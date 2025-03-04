@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 /*    background-color: hsl(100 100% 50% / 0.1);
     z-index: -1;
     outline: 3px solid orange;*/
@@ -32,15 +33,29 @@ body {
 }
 
 .logo-container {
+    height: 120px;
+    padding: 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem;
-    height: 15%;
-    background-color: hsl(100 100% 50% / 0.5)
+    justify-content: center;
+    background-color: hsla(0, 0%, 75%, 0.5)
+}
+
+.logo {
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo-text {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
 }
 
 .copyright  {
-    color: aliceblue;
+    color: white;
     margin-top: auto;
     padding: 0.5rem;
     text-align: center;
@@ -49,15 +64,89 @@ body {
 .right {
     height: 100%;
     display: flex;
-    padding: 2rem;
 }
 
+.top-section {
+    padding: 10rem 2rem 2rem;
+    background-color: hsla(0, 0%, 85%, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.text {
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text-italic {
+    font-size: 1.2rem;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    padding: 2rem 0 0;
+}
+
+
 .form-container {
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0.5rem 2rem;
+    gap: 2rem;
+    box-shadow: 0 10px 5px -5px lightgray;
+
+}
+
+.form-title {
+    font-size: 1.2rem;
+    padding-top: 0;
+    margin: 0;
 }
 
 .form {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    display: flex;
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 23%, 0.9);
+}
+
+input {
+    margin: 0.5rem 0 2rem 0;
+}
+
+input:focus {
+    box-shadow: 0 10px 5px -5px lightgray;
+}
+
+.form-first-row {
+    width: 50%;
+}
+
+
+.form-second-row {
+    width: 50%;
+}
+
+.submit {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.create-account-button {
+    width: 25%;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: lightblue;
+    border-radius: 5px;
 }
