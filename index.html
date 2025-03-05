@@ -26,35 +26,49 @@
                         You <i class="text-italic">know</i> you want to.
                     </p>
                 </div>
-                <div class="form-container">
-                    <h3 class="form-title">
-                        Let's do this!
-                    </h3>
-                    <form action="" class="form">
-                        <div class="form-first-row">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="">
-                            <label for="email" class="email">EMAIL</label>
-                            <input type="email" name="email" id="">
-                            <label for="password" class="password">PASSWORD</label>
-                            <input type="password" name="password" id="">    
+                <h3 class="form-title">
+                    Let's do this!
+                </h3>
+                <form action="" class="form">
+                    <div class="form-background">
+                        <div class="form-wrapper">
+                            <div class="input-wrapper">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" name="first-name" id="" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" name="last-name" id="" required>
+                            </div>
                         </div>
-                        <div class="form-second-row">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="">
-                            <label for="phone" class="phone-number">PHONE NUMBER</label>
-                            <input type="number" name="phone-number" id="">
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="" id="">
+                        <div class="form-wrapper">
+                            <div class="input-wrapper">
+                                <label for="email" class="email">EMAIL</label>
+                                <input type="email" name="email" id="" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone" class="phone-number">PHONE NUMBER</label>
+                                <input type="number" name="phone-number" id="" required>
+                            </div>
                         </div>
-                    </form>
-                </div>
-                <div class="submit">
-                    <button type="submit" class="create-account-button">Create Account</button>
-                    <p class="account-text">
-                        Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
-                    </p>
-                </div>
+                        <div class="form-wrapper">
+                            <div class="input-wrapper">
+                                <label for="password" class="password">PASSWORD</label>
+                                <input type="password" name="password" id="" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" name="" id="" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input  type="submit" class="create-account-button">Create Account</button>
+                        <p class="account-text">
+                            Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
+                        </p>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
